@@ -1,0 +1,25 @@
+///
+/// Jan Mareen Website : Developed by Genius Tech
+///  
+/// Powered By Genius Tech Designed By Skrstsh
+///
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		p {
+			margin-top: _size(element-margin) * -0.5;
+		}
+
+		@include breakpoint('<=small') {
+			p {
+				margin-top: 0;
+			}
+		}
+	}

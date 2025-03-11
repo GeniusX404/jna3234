@@ -1,0 +1,23 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+
+/*
+	Jan Mareen Website : Developed by Genius Tech
+	 
+	Powered By Genius Tech Designed By Skrstsh
+*/
+
+/* Tiles */
+
+	.tiles {
+		body.is-preload & {
+			article {
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
+		}
+	}
